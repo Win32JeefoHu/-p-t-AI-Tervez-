@@ -1,0 +1,11 @@
+-keep class com.nagyattila.epitoaitervezo.** { *; }
+-keep class com.google.ar.core.** { *; }
+-keepclassmembers class com.google.ar.core.** { *; }
+-dontwarn com.google.ar.core.**
+-keep class com.google.mlkit.** { *; }
+-keep class com.google.android.gms.internal.mlkit_vision_text_common.** { *; }
+-dontwarn com.google.mlkit.**
+-dontwarn com.google.android.gms.internal.mlkit_vision_text_common.**
+-keepclasseswithmembernames class * { native <methods>; }
+-keep class androidx.appcompat.** { *; }
+-keep class com.google.android.material.** { *; }
