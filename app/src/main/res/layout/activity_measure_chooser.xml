@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/navy" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="22.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chooser_title" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/muted" android:id="@+id/chooserStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:lineSpacingExtra="2.0dp" />
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardAr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" app:cardBackgroundColor="@color/panel" app:cardCornerRadius="18.0dp" app:strokeColor="@color/cyan" app:strokeWidth="0.0dp">
+            <LinearLayout android:orientation="vertical" android:padding="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chooser_ar_label" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/chooser_ar_title" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/muted" android:id="@+id/arHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/chooser_ar_body" />
+                <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/btnArMeasure" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="14.0dp" android:text="@string/chooser_ar_btn" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardDepth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" app:cardBackgroundColor="@color/panel" app:cardCornerRadius="18.0dp" app:strokeColor="@color/orange" app:strokeWidth="1.0dp">
+            <LinearLayout android:orientation="vertical" android:padding="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chooser_depth_label" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/chooser_depth_title" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/muted" android:id="@+id/depthHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/chooser_depth_body" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/orange" android:id="@+id/depthBadge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/chooser_depth_checking" />
+                <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/btnDepthMeasure" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="14.0dp" android:text="@string/chooser_depth_btn" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardBasic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" app:cardBackgroundColor="@color/panel" app:cardCornerRadius="18.0dp" app:strokeColor="@color/cyan" app:strokeWidth="0.0dp">
+            <LinearLayout android:orientation="vertical" android:padding="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chooser_basic_label" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/chooser_basic_title" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/chooser_basic_body" />
+                <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/btnBasicMeasure" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="14.0dp" android:text="@string/chooser_basic_btn" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton android:textColor="@color/muted" android:id="@+id/btnChooserBack" android:layout_width="match_parent" android:layout_height="48.0dp" android:text="@string/chooser_back" style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </LinearLayout>
+</ScrollView>

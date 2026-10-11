@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff09141e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.opengl.GLSurfaceView android:id="@+id/cameraSurface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.nagyattila.epitoaitervezo.MeasurePathOverlay android:id="@+id/pathOverlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/messagePanel" android:background="#ff09141e" android:padding="28.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:gravity="center" android:id="@+id/messageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/measure_loading_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/messageBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/measure_loading_body" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/hud" android:background="#b309141e" android:padding="18.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/measure_status_init" />
+        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:id="@+id/result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/measure_distance_zero" />
+        <ScrollView android:layout_width="match_parent" android:layout_height="120.0dp" android:layout_marginTop="6.0dp" android:fillViewport="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/segments" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <TextView android:textSize="46.0sp" android:textColor="@color/cyan" android:layout_gravity="center" android:id="@+id/crosshair" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="＋" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/navy" android:layout_gravity="top|end" android:id="@+id/depthBadge" android:background="@color/orange" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dp" android:text="@string/measure_depth_badge" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/buttonBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+        <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/pointButton" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="@string/measure_btn_first" />
+        <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/clearButton" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:text="@string/measure_btn_clear" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </LinearLayout>
+</FrameLayout>
