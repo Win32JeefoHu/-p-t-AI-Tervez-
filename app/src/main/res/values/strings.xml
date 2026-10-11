@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Építő AI Tervező</string>
+    <string name="basic_measure_banner">Ezen a készüléken az AR (ARCore) nem érhető el. Alap mérő mód aktív — a többi modul (alaprajz, feltöltés, költség stb.) továbbra is működik.</string>
+    <string name="basic_measure_banner_optional">Alap mérő mód aktív (referenciahossz-skálázás). A többi modul (alaprajz, feltöltés, költség stb.) változatlanul működik.</string>
+    <string name="basic_measure_enter_scale">Írd be: 1. mért szakasz = X méter (skála).</string>
+    <string name="basic_measure_hint">Koppints a képre a pontokhoz. Az 1. szakaszhoz add meg a referenciahosszt méterben.</string>
+    <string name="basic_measure_place_second">Tedd le a 2. pontot (referencia-szakasz vége).</string>
+    <string name="basic_measure_scale_label">1. mért szakasz =</string>
+    <string name="basic_measure_undo">UTOLSÓ PONT VISSZAVONÁSA</string>
+    <string name="chooser_ar_available_status">ARCore elérhető ezen a készüléken. Válaszd az AR vagy az alap módot.</string>
+    <string name="chooser_ar_body">Valós méretű 3D pontok ARCore-ral. Többpontos poligon, élő előnézet.</string>
+    <string name="chooser_ar_btn">AR MÉRÉS</string>
+    <string name="chooser_ar_label">AR MÓD</string>
+    <string name="chooser_ar_title">AR mérés</string>
+    <string name="chooser_ar_unavailable_hint">Ez a készülék nem támogatja az ARCore-t (pl. Samsung Galaxy A14). Válaszd az Alap mérést.</string>
+    <string name="chooser_ar_unavailable_status">Ezen a készüléken az AR (ARCore) nem érhető el. Az Alap mérés ajánlott — a többi modul továbbra is működik.</string>
+    <string name="chooser_ar_unavailable_toast">ARCore nem érhető el ezen a készüléken. Használd az Alap mérést.</string>
+    <string name="chooser_ar_unknown_status">ARCore állapot nem egyértelmű. Próbálhatod az AR módot, vagy válaszd az Alap mérést.</string>
+    <string name="chooser_back">Vissza</string>
+    <string name="chooser_basic_body">Kamera előnézet + kézi pontok. Referenciahossz megadásával skálázott távolság és terület.</string>
+    <string name="chooser_basic_btn">ALAP MÉRÉS</string>
+    <string name="chooser_basic_label">ALAP MÓD</string>
+    <string name="chooser_basic_title">Alap mérés</string>
+    <string name="chooser_checking">ARCore elérhetőség ellenőrzése…</string>
+    <string name="chooser_title">Mérés indítása</string>
+    <string name="import_applied">Adatok beírva a PlanStore-ba</string>
+    <string name="import_applied_msg">A kinyert méretek / terület / szigetelés a tervezőmodulokra került. Megnyitod az alaprajzot vagy a szigetelést?</string>
+    <string name="import_applied_title">Adatok alkalmazva</string>
+    <string name="import_apply">Adatok alkalmazása a tervezőmodulokra</string>
+    <string name="import_disclaimer">automatikus kinyerés — ellenőrizd</string>
+    <string name="import_done_check">Kész — automatikus kinyerés — ellenőrizd az adatokat</string>
+    <string name="import_error">Hiba: %1$s</string>
+    <string name="import_failed">A dokumentum feldolgozása sikertelen</string>
+    <string name="import_hint_formats">Támogatott formátumok: PNG, JPG/JPEG, PDF. Automatikus kinyerés — ellenőrizd.</string>
+    <string name="import_menu">Terv / specifikáció feltöltése</string>
+    <string name="import_no_file">Nincs kiválasztott fájl (PNG/JPG/PDF)</string>
+    <string name="import_no_text">(Nem sikerült szöveget kinyerni)</string>
+    <string name="import_open_floor">Alaprajz megnyitása</string>
+    <string name="import_open_insulation">Anyagkalkuláció megnyitása</string>
+    <string name="import_parsed_label">Kinyert mezők (összefoglaló)</string>
+    <string name="import_pick_file">Fájl kiválasztása (PNG, JPG vagy PDF)</string>
+    <string name="import_raw_label">Nyers kinyert szöveg</string>
+    <string name="import_stay">Maradok itt</string>
+    <string name="import_title">Terv / specifikáció feltöltése (PNG/JPG/PDF)</string>
+    <string name="import_unsupported_format">Csak PNG, JPG/JPEG vagy PDF tölthető fel</string>
+    <string name="import_working">Szöveg kinyerése folyamatban (OCR / PDF)…</string>
+    <string name="measure_ar_checking">ARCore ellenőrzése folyamatban…</string>
+    <string name="measure_ar_fail_body">Az ARCore munkamenet nem jött létre ezen a készüléken. Telepítsd / frissítsd a „Google Play Services for AR” csomagot, majd próbáld újra.</string>
+    <string name="measure_arcore_install">ARCore telepítése folyamatban…</string>
+    <string name="measure_btn_clear">TÖRLÉS</string>
+    <string name="measure_btn_first">ELSŐ PONT RÖGZÍTÉSE</string>
+    <string name="measure_btn_next">KÖVETKEZŐ PONT</string>
+    <string name="measure_camera_busy">A kamera nem érhető el</string>
+    <string name="measure_camera_denied">A méréshez engedélyezni kell a kamerát</string>
+    <string name="measure_camera_permission_body">Engedélyezd a kamerát, majd indítsd újra a mérést.</string>
+    <string name="measure_camera_permission_title">Kamera kell</string>
+    <string name="measure_distance_zero">0,00 m</string>
+    <string name="measure_last_segment">Utolsó szakasz: %1$s</string>
+    <string name="measure_loading_body">ARCore és a kamera előkészítése. Ha ez túl sokáig tart, telepítsd a Google Play Services for AR alkalmazást.</string>
+    <string name="measure_loading_title">Kamera indítása…</string>
+    <string name="measure_move_phone">Mozgasd lassan a telefont síkok kereséséhez</string>
+    <string name="measure_no_plane">Nincs detektált felület • irányítsd a keresztet egy síkra</string>
+    <string name="measure_placing">Pont rögzítése…</string>
+    <string name="measure_point_set">%1$d. pont rögzítve • tedd a keresztet a következőre</string>
+    <string name="measure_segment_line">%1$d–%2$d: %3$s</string>
+    <string name="measure_status_init">AR-környezet ellenőrzése…</string>
+    <string name="measure_total">Összesen: %1$s</string>
+
+    <string name="elements_title">Építőelemek</string>
+    <string name="elements_hint">Nyílászárók (ajtó/ablak), lépcső és padló elhelyezése az alaprajzon. AR/alap méréstől független.</string>
+    <string name="elements_need_plan">Előbb rajzolj és ments alaprajzot (legalább 3 sarok).</string>
+    <string name="elem_door">Ajtó</string>
+    <string name="elem_window">Ablak</string>
+    <string name="elem_stair">Lépcső</string>
+    <string name="elem_flooring">Padló</string>
+    <string name="elem_category_openings">Nyílászárók</string>
+    <string name="elem_width">Szélesség (m)</string>
+    <string name="elem_height">Magasság (m)</string>
+    <string name="elem_sill">Párkánymagasság (m)</string>
+    <string name="elem_steps">Fokok száma</string>
+    <string name="elem_step_depth">Belépő (m)</string>
+    <string name="elem_step_rise">Fellépő (m)</string>
+    <string name="elem_material">Anyag / típus</string>
+    <string name="elem_place">ELHELYEZÉS A TERVEN</string>
+    <string name="elem_delete_last">UTOLSÓ TÖRLÉSE</string>
+    <string name="elem_tap_plan">Koppints a falra / tervre</string>
+    <string name="elem_need_wall">Ajtó/ablak: koppints egy fal közelébe</string>
+    <string name="elem_flooring_added">Padlóanyag hozzárendelve a helyiséghez</string>
+    <string name="elem_none">Nincs elem</string>
+    <string name="elem_list_empty">Még nincs elhelyezett elem.</string>
+
+
+    <string name="materials_title">Anyagkalkuláció</string>
+    <string name="materials_hint">Szigetelés, festés, vakolat, padló, csempe, ragasztó, nyílászárók és lépcső mennyiségei a PlanStore területéből.</string>
+    <string name="materials_category">Kategória</string>
+    <string name="materials_area">Felület / alapterület (m²)</string>
+    <string name="materials_waste">Hulladék / vágási veszteség (%)</string>
+    <string name="materials_thickness_cm">Vastagság (cm)</string>
+    <string name="materials_insul_type">Szigetelés anyagtípus</string>
+    <string name="materials_paint_coats">Rétegszám (alapozó + fedő)</string>
+    <string name="materials_paint_coverage">Festék (L/m²/réteg)</string>
+    <string name="materials_plaster_mm">Vakolat / glett vastagság (mm)</string>
+    <string name="materials_plaster_bag">Zsákméret (kg)</string>
+    <string name="materials_flooring_hint">A padlóterület a PlanStore alapterületéből (vagy elhelyezett padlóelemből) jön. Hulladék: fenti %.</string>
+    <string name="materials_wall_factor">Fal tényező (padló × tényező)</string>
+    <string name="materials_wall_area_override">Fal terület felülírás (m², 0 = auto)</string>
+    <string name="materials_adhesive_kg">Ragasztó (kg/m²)</string>
+    <string name="materials_grout_kg">Fugázó (kg/m²)</string>
+    <string name="materials_openings_hint">Ajtó / ablak darabszám az Építőelemek modulból.</string>
+    <string name="materials_stairs_hint">Lépcső darabszám és futóhossz az Építőelemek modulból.</string>
+    <string name="materials_calc_btn">SZÁMÍTÁS (összes kategória)</string>
+    <string name="materials_check_numbers">Ellenőrizd a számokat</string>
+    <string name="materials_menu">Anyagkalkuláció</string>
+
+    <string name="chooser_depth_label">MÉLYSÉG / LiDAR-SZERŰ</string>
+    <string name="chooser_depth_title">Mélységérzékelő (Depth/ToF)</string>
+    <string name="chooser_depth_body">ARCore Depth API — mélységgel támogatott hit-test, ha a készülék támogatja. Nem Apple LiDAR; csak Depth/ToF képes telefonokon.</string>
+    <string name="chooser_depth_btn">MÉLYSÉG / LiDAR MÓD</string>
+    <string name="chooser_depth_checking">Mélység API ellenőrzése…</string>
+    <string name="chooser_depth_available">✓ Mélység API elérhető ezen a készüléken</string>
+    <string name="chooser_depth_unavailable_badge">✗ Nincs mélységérzékelő / Depth API</string>
+    <string name="chooser_depth_unavailable_body">Ezen a telefonon nincs ARCore Depth (ToF/LiDAR-szerű) támogatás — pl. Galaxy A14/A32 tipikusan. Használd az AR vagy az Alap mérést.</string>
+    <string name="chooser_depth_unavailable_toast">Nincs Depth/ToF támogatás ezen a készüléken.</string>
+
+    <string name="measure_depth_active">Mélység aktív — irányítsd a keresztet, majd rögzíts pontot</string>
+    <string name="measure_depth_badge">Mélység aktív</string>
+
+
+</resources>
