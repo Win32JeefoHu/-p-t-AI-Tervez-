@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:background="@color/navy"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/cyan"
+        android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="2D alaprajz (CAD)" />
+    <TextView android:id="@+id/planInfo" android:textSize="13sp" android:textColor="@color/white"
+        android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="4dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="4dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnModeWall"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Fal" android:textSize="12sp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnPlaceDoor"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Ajtó" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnPlaceWindow"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Ablak" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnPlaceStair"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Lépcső" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnPlaceFloor"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Padló" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnToggleLayers"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Rétegek" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCopySel"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="Másol" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnSnap"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:layout_margin="2dp"
+                android:text="45/90" android:textSize="12sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:orientation="horizontal" android:paddingHorizontal="8dp"
+        android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Skála (m/px):" android:textColor="@color/muted" android:textSize="12sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/scaleField" android:layout_width="0dp" android:layout_height="40dp"
+            android:layout_weight="1" android:layout_marginStart="8dp" android:inputType="numberDecimal"
+            android:textColor="@color/white" android:textColorHint="@color/muted" android:hint="0.02"
+            android:background="#1affffff" android:paddingHorizontal="8dp" android:textSize="14sp" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnApplyScale"
+            android:layout_width="wrap_content" android:layout_height="40dp" android:text="OK" android:textSize="12sp" />
+    </LinearLayout>
+    <com.nagyattila.epitoaitervezo.FloorPlanView android:id="@+id/floorPlanView"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <LinearLayout android:orientation="horizontal" android:padding="6dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCloseRoom"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp"
+            android:text="Zárás" android:layout_weight="1" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnUndo"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp"
+            android:text="Vissza" android:layout_weight="1" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnClearPlan"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp"
+            android:text="Törlés" android:layout_weight="1" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSavePlan"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp"
+            android:text="Mentés" android:layout_weight="1" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnExportFromPlan"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp" android:layout_marginBottom="10dp"
+        android:text="Export (PDF/PNG)" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>
