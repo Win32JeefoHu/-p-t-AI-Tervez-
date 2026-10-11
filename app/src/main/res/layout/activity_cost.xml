@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/navy" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="Költségbecslés" />
+        <TextView android:textColor="@color/muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Felület (m²)" />
+        <EditText android:textColor="@color/white" android:id="@+id/costArea" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+        <TextView android:textColor="@color/muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Anyag egységár (Ft/m²)" />
+        <EditText android:textColor="@color/white" android:id="@+id/costMatPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+        <TextView android:textColor="@color/muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Munkadíj (Ft/m²)" />
+        <EditText android:textColor="@color/white" android:id="@+id/costLaborPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+        <TextView android:textColor="@color/muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Egyéb költség (Ft)" />
+        <EditText android:textColor="@color/white" android:id="@+id/costExtra" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+        
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Építőelemek egységárak" android:textColor="@color/cyan"
+            android:textStyle="bold" android:textSize="15sp" android:layout_marginTop="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Ajtó (Ft/db)" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/costDoorPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" android:textColor="@color/white" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Ablak (Ft/db)" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/costWindowPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" android:textColor="@color/white" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Lépcső (Ft/m futó)" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/costStairPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" android:textColor="@color/white" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Padló (Ft/m²)" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/costFlooringPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" android:textColor="@color/white" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Festék (Ft/liter)" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/costPaintPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" android:textColor="@color/white" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Vakolat (Ft/kg)" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/costPlasterPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="numberDecimal" android:textColor="@color/white" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCostCalc" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="18.0dp" android:text="KALKULÁLÁS" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@+id/costResult" android:background="@color/panel" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:lineSpacingExtra="4.0dp" />
+    </LinearLayout>
+</ScrollView>

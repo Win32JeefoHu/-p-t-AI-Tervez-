@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navy">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/elements_title"
+        android:textColor="@color/cyan"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/elementsHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/elements_hint"
+        android:textColor="@color/muted"
+        android:textSize="13sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTypeDoor"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:text="@string/elem_door"
+                android:textSize="12sp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTypeWindow"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:text="@string/elem_window"
+                android:textSize="12sp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTypeStair"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:text="@string/elem_stair"
+                android:textSize="12sp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTypeFlooring"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:text="@string/elem_flooring"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/orange"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.32"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="6dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/elem_width" android:textColor="@color/muted" android:textSize="12sp" />
+                    <EditText android:id="@+id/inputWidth" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:inputType="numberDecimal"
+                        android:textColor="@color/white" android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="6dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/elem_height" android:textColor="@color/muted" android:textSize="12sp" />
+                    <EditText android:id="@+id/inputHeight" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:inputType="numberDecimal"
+                        android:textColor="@color/white" android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/labelSill" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/elem_sill"
+                android:textColor="@color/muted" android:textSize="12sp" android:layout_marginTop="4dp" />
+            <EditText android:id="@+id/inputSill" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="numberDecimal"
+                android:textColor="@color/white" android:textSize="14sp" />
+            <LinearLayout android:id="@+id/stairRow" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="4dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/elem_steps" android:textColor="@color/muted" android:textSize="12sp" />
+                    <EditText android:id="@+id/inputSteps" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:inputType="number"
+                        android:textColor="@color/white" android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_margin="4dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/elem_step_depth" android:textColor="@color/muted" android:textSize="12sp" />
+                    <EditText android:id="@+id/inputStepDepth" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:inputType="numberDecimal"
+                        android:textColor="@color/white" android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="4dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/elem_step_rise" android:textColor="@color/muted" android:textSize="12sp" />
+                    <EditText android:id="@+id/inputStepRise" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:inputType="numberDecimal"
+                        android:textColor="@color/white" android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/elem_material" android:textColor="@color/muted"
+                android:textSize="12sp" android:layout_marginTop="4dp" />
+            <EditText android:id="@+id/inputMaterial" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="text"
+                android:textColor="@color/white" android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.nagyattila.epitoaitervezo.FloorPlanView
+        android:id="@+id/elementsPlanView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45" />
+
+    <TextView
+        android:id="@+id/elementsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@color/panel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlaceElement"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/elem_place" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteLast"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/elem_delete_last" />
+    </LinearLayout>
+</LinearLayout>

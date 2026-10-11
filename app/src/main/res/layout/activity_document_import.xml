@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/navy" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="@string/import_title" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/orange" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/import_disclaimer" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" android:text="@string/import_hint_formats" />
+        <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/btnPickFile" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/import_pick_file" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@+id/importFileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/import_no_file" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:id="@+id/importStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+        <ProgressBar android:id="@+id/importProgress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/import_parsed_label" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/importSummary" android:background="@color/panel" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minHeight="72.0dp" android:lineSpacingExtra="3.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/import_raw_label" />
+        <ScrollView android:background="@color/panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="220.0dp" android:layout_marginTop="8.0dp" android:fillViewport="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/muted" android:id="@+id/importRawText" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+        </ScrollView>
+        <com.google.android.material.button.MaterialButton android:enabled="false" android:textStyle="bold" android:id="@+id/btnApplyImport" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginTop="18.0dp" android:text="@string/import_apply" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnOpenFloorPlan" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:text="@string/import_open_floor" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnOpenInsulation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:text="@string/import_open_insulation" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="12.0dp" android:text="© Nagy Attila" />
+    </LinearLayout>
+</ScrollView>

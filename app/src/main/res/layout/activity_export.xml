@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/navy" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="PDF és képexport" />
+    <TextView android:textColor="@color/muted" android:id="@+id/exportStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnExportPdf" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="PDF EXPORT" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnExportPng" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="10.0dp" android:text="PNG ALAPRAJZ" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnShare" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="10.0dp" android:text="MEGOSZTÁS" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>
