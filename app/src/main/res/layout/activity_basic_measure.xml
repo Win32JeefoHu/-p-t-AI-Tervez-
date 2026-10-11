@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff09141e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextureView android:id="@+id/cameraPreview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.nagyattila.epitoaitervezo.MeasurePathOverlay android:id="@+id/pathOverlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:background="#cc09141e" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/cyan" android:id="@+id/basicBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/basic_measure_banner" android:lineSpacingExtra="2.0dp" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/basic_measure_hint" />
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/cyan" android:id="@+id/result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/measure_distance_zero" />
+        <ScrollView android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_marginTop="4.0dp" android:fillViewport="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@+id/segments" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/basic_measure_scale_label" android:layout_weight="1.0" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/white" android:textColorHint="@color/muted" android:id="@+id/scaleInput" android:background="#1affffff" android:layout_width="96.0dp" android:layout_height="40.0dp" android:hint="m" android:inputType="numberDecimal" android:imeOptions="actionDone" android:paddingHorizontal="10.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+        <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/undoButton" android:layout_width="match_parent" android:layout_height="48.0dp" android:text="@string/basic_measure_undo" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:textStyle="bold" android:id="@+id/clearButton" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:text="@string/measure_btn_clear" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </LinearLayout>
+</FrameLayout>
